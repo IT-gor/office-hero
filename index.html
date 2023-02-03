@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="css/style_dark.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>OFFICE HERO</title>
+</head>
+
+<body>
+    <!-- <h1 class="headline no-select">OfficeHero</h1> -->
+    <div class="row">
+        <div class="col-12"><div id="logo" class="center"></div></div>
+        <div id="soundContainer" class=" col-4 box mt-0">
+            <div class="center m-2">
+                <h3 class="no-select">Choose Your Instrument</h3>
+            </div>
+            <div class="row center-list">
+                <div class="select-instrument select-item instrument" id="bell" value="bell"></div>
+                <div class="select-instrument select-item instrument" id="pluck" value="synthesizer2"></div>
+                <div class="select-instrument select-item instrument" id="synth" value="synthesizer"></div>
+                <div class="select-instrument select-item instrument" id="pad" value="cloud"></div>
+                <div class="select-instrument select-item instrument" id="key" value="klavier"></div>
+                <div class="select-instrument select-item instrument" id="guitar" value="guitarChill"></div>
+                <div class="select-instrument select-item instrument" id="bass" value="bass"></div>
+                <div class="select-instrument select-item instrument" id="string" value="violin"></div>
+            </div>
+
+            <div class="center m-2">
+                <h3 class="no-select">Choose Your Marker</h3>
+            </div>
+            <div class="row center-list">
+                <div class="select-marker select-item" midi="[177, 10, 1]" id="marker_yellow" value="textmarker_gelb"></div>
+                <div class="select-marker select-item" midi="[177, 10, 2]" id="marker_red" value="textmarker_rot"></div>
+                <div class="select-marker select-item" midi="[177, 10, 3]" id="marker_blue" value="textmarker_blau"></div>
+                <div class="select-marker select-item" midi="[177, 10, 4]" id="marker_green" value="textmarker_gruen"></div>
+                <div class="select-marker select-item" midi="[177, 10, 11]" id="marker_detect" value="textmarker_detect"></div>
+
+            </div>
+
+            <div class="center m-2">
+                <h3 class="no-select">Choose Your Song</h3>
+            </div>
+            <div class="row center-list">
+                <div class="select-song select-item" midi="[177, 10, 5]" id="midi_ente" value="ente"></div>
+                <div class="select-song select-item" midi="[177, 10, 6]" id="midi_addams" value="frankenstein"></div>
+                <div class="select-song select-item" midi="[177, 10, 7]" id="midi_axel" value="police"></div>
+                <div class="select-song select-item" midi="[177, 10, 8]" id="midi_mario" value="mario"></div>
+            </div>
+
+        </div>
+        <div class="col-7 box center mt-0">
+            <h3 class="no-select col-8 offset-2 mt-2">Place The Screen Below:</h3>
+            <div class="box-img box-left"></div>
+            <div class="box-img box-right"></div>
+            <div class="box-img box-left-top"></div>
+            <div class="box-img box-right-top"></div>
+            <div id="playButton" class="no-select">Play</div>
+        </div>
+        
+    </div>
+    <!-- <div onload="initialize()">
+            MIDI Input: <select id="inputportselector"></select>
+            <button type="button" id="connectbutton">Öffnen</button><br>
+            incoming message: <span id="label">undefined</span>
+    </div> -->
+
+    <script src="js/midi.js"></script>
+    <script src="js/synth.js"></script>
+    <script src="js/ui.js"></script>
+    <!-- <script src="js/init.js"></script> -->
+
+</body>
+
+</html>
